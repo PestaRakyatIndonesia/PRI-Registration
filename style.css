@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+.header{
+  text-align: center;
+  margin-top: 30px;
+}
 body{
   margin: 0;
   display: flex;
@@ -12,6 +16,8 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-image: url("https://uploads-ssl.webflow.com/632aa71e099f148036e2c099/636b8b72e5015062179741b4_indonesia-flag-ruffled-beautifully-waving-macro-close-up-shot%20(1).jpg");
+  background-size: cover;
 }
 .main{
   max-width: 1090px;
@@ -28,15 +34,74 @@ body{
   position: relative;
   box-shadow: 0 5px 10px rgba(0,0,0,0.1);
   border-radius: 7px;
+  background-image: url("https://uploads-ssl.webflow.com/632aa71e099f148036e2c099/636935f95b56692c69a77f9a_imageedit_2_9282631321.png");
+  background-size: cover;
 }
-.regular{
-  background-image: linear-gradient(to bottom right, #ff002b, white, white, white,white,white);
+h1{
+  color: #fff;
+  font-size: 56px;
 }
-.vip{
-  background-image: linear-gradient(to bottom right, #ffd700, white, white, white,white,white);
+h2 {
+  font-family: sans-serif;
+  margin-bottom: 30px;
+  color: #2F4F4F;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
 }
-.vvip{
-  background-image: linear-gradient(to bottom right, black, white, white, white,white,white);
+h2::before {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 2px;
+  background: #000;
+  top: 50%;
+  position: absolute;
+}
+.regular h2::before,
+.regular h2::after{
+  background:  red;
+}
+.vip h2::before,
+.vip h2::after{
+  background:  #ffd700;
+}
+.vvip h2::before,
+.vvip h2::after{
+  background:  black;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 25%;
+  height: 2px;
+  background: #000;
+  top: 50%;
+  position: absolute;
+}
+h2::before{
+  left: 0;
+}
+h2::after {
+  right: 0;
+}
+.price{
+  display: flex;
+  text-align: center;
+}
+.kiri{
+  margin-top: 10px;
+  margin-left: 2px;
+  font-size: 22px;
+  color: lightseagreen;
+  width: 40%;
+  text-align: right;
+}
+.kanan{
+  color: lightseagreen;
+  width: 69%;
+  font-size: 66px;
+  text-align: left;
 }
 li{
   margin-bottom: 15px;
@@ -62,10 +127,8 @@ li{
   justify-content: center;
   
 }
-.btn button{
-  background-color: white;
+.btn input{
   border: none;
-  color: black;
   font-size: 20px;
   font-weight: 500;
   outline: none;
@@ -74,15 +137,15 @@ li{
   cursor: pointer;
   width: 70%;
 }
-.regular .btn button{
+.regular .btn input{
   background-color: #ff002b;
   color: white;
 }
-.vip .btn button{
+.vip .btn input{
   background-color: #ffd700;
   color: white;
 }
-.vvip .btn button{
+.vvip .btn input{
   background-color: black;
   color: white;
 }
@@ -140,4 +203,23 @@ li{
   background-color: #24262b;
   padding: 20px 0;
   color: #fff;
+}
+.social-links{
+  margin-top: 10px;
+}
+.footer .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
 }
