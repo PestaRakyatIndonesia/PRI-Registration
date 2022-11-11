@@ -93,12 +93,12 @@ h2::after {
   margin-top: 10px;
   margin-left: 2px;
   font-size: 22px;
-  color: lightseagreen;
+  color: #2F4F4F;
   width: 40%;
   text-align: right;
 }
 .kanan{
-  color: lightseagreen;
+  color: #2F4F4F;
   width: 69%;
   font-size: 66px;
   text-align: left;
